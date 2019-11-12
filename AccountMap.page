@@ -1,0 +1,11 @@
+<!--
+ - Created by kirill on 08/11/2019.
+ -->
+<apex:page>
+    <style>
+        html, body, #map {
+            width: 100%; height: 100%; padding: 0; margin: 0;
+        }
+    </style>
+    <div id="map"></div>
+</apex:page>

@@ -1,0 +1,22 @@
+<!--
+ - Created by kirill on 08/11/2019.
+ -->
+<apex:page controller="one" action="{!save}">
+    <apex:form >
+        <apex:pageBlock id="one">
+            <apex:pageBlockTable value="{!accs}" var="a">
+                <apex:column value="{!a.id}"/>
+                <apex:column value="{!a.name}"/>
+                <apex:column >
+                    <apex:commandButton value="click" action="{!save}" reRender="one"/>
+                    <apex:param value="{!a.id}" assignTo="{!accid}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    ID:{!accid}
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,11 @@
+<!--
+ - Created by kirill on 01/11/2019.
+ -->
+
+<apex:page id="DisplayUserInfo">
+        <apex:pageblock>
+            <apex:pageblockSection>
+                {!$user.firstname}
+            </apex:pageblockSection>
+        </apex:pageblock>
+</apex:page>

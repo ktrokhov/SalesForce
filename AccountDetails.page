@@ -1,0 +1,8 @@
+<!--
+ - Created by kirill on 01/11/2019.
+ -->
+<apex:page standardController="Account">
+
+    {! Account.Name }
+
+</apex:page>
